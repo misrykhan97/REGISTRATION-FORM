@@ -9,7 +9,7 @@ let searchForm = document.querySelector(".searchForm");
 if (localStorage.getItem("allUserData") != null) {
   let string = localStorage.getItem("allUserData");
   allUserData = JSON.parse(string);
-  document.querySelector(".submitBtn").classList.remove("d-none");
+  document.querySelector(".submitBtn").classList.remove("d-none !important");
 }
 regForm.onsubmit = (X) => {
   X.preventDefault();
